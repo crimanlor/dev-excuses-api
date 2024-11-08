@@ -4,7 +4,8 @@
   "description": "This project is a simple Express application that allows you to manage user data by adding and retrieving users stored in a text file without interface.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
     "dev": "nodemon app.js",
     "start": "node app.js"
   },
@@ -16,7 +17,8 @@
   "author": "Lorena Criado Manzaneque",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "jest": "^29.7.0"
   },
   "bugs": {
     "url": "https://github.com/crimanlor/dev-excuses-api/issues"

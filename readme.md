@@ -30,7 +30,7 @@ To get started with DevExcuses API locally, follow these steps:
 3. Run the application:
 
 ```bash
-  npm start
+npm start
 ```
 
 ### Endpoints

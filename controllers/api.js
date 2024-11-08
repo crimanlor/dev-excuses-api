@@ -1,14 +1,20 @@
+const Excuse = require("../models/excuse.model");
 
 
 const getExcuse = async (req, res) => {
-    const excuses = [
-        "I was too busy debugging my code.",
-        "I forgot to push the changes.",
-        "The server went down.",
-        "I had a meeting."
-      ];
-      const excuse = excuses[Math.floor(Math.random() * excuses.length)];
-      res.json({ excuse });
+    const excuses = await Excuse.find()
+    const excuse = excuses[Math.floor(Math.random() * excuses.length)];
+    res.json({ excuse });
 }
 
-module.exports = { getExcuse };
+const postNewExcuse = async (req, res) => {
+  const excuse = {
+    value: "The server's down again. Must be a deep philosophical issue with the cables.",
+    category: "network",
+    bsLevel: 72
+  }
+  await Excuse.create(excuse)
+  res.json({ excuse });
+}
+
+module.exports = { getExcuse, postNewExcuse };
