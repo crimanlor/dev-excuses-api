@@ -1,0 +1,32 @@
+{
+  "name": "dev-excuses-api",
+  "version": "1.0.0",
+  "description": "This project is a simple Express application that allows you to manage user data by adding and retrieving users stored in a text file without interface.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crimanlor/dev-excuses-api.git"
+  },
+  "keywords": [],
+  "author": "Lorena Criado Manzaneque",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "bugs": {
+    "url": "https://github.com/crimanlor/dev-excuses-api/issues"
+  },
+  "homepage": "https://github.com/crimanlor/dev-excuses-api#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.0",
+    "morgan": "^1.10.0"
+  }
+}
